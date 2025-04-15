@@ -1,0 +1,86 @@
+// Button
+.button {
+    background-color: $color-primary;
+    border-radius: 0.5rem;
+    display: flex;
+    height: 3.5rem;
+    padding: 0rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+// Tab Buttons
+.tab-buttons {
+    @include media-breakpoint-up(md) {
+        padding: 0 1.5rem 1rem;
+    }
+
+    .tab-buttons-wrapper {
+        display: flex;
+        padding: 0.75rem 1rem;
+        align-items: center;
+        gap: 0.75rem;
+        align-self: stretch;
+        background-color: $neutral-n700;
+        border-radius: 1rem;
+
+        .tab-button {
+            all: unset;
+            display: flex;
+            flex: 1 0 0;
+            justify-content: center;
+            cursor: pointer;
+
+            &.active {
+                display: flex;
+                height: 3.25rem;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.625rem;
+                background: $color-darkMode;
+
+                h6 {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+// Load More Button
+.load-more-wrapper{
+    // all: unset;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem 0rem;
+
+    .load-more-button {
+        background-color: $color-secondary;
+        
+        h6 {
+            color: $neutral-n700;
+        }
+    }
+}
+
+// Back Button
+.back-button-wrapper {
+    padding: 1.5rem 0rem;
+    display: flex;
+    justify-content: center;
+
+    .back-button {
+        display: flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4.4375rem;
+        background-color: $color-primary;
+        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}

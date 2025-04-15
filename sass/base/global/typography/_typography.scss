@@ -1,0 +1,46 @@
+h1, h2, h3, h4, h5, h6, body, .caption, .smaller-caption {
+    font-family: $font-primary;
+    color: $color-white;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+h1 {
+    font-size: map-get($font-sizes, "h1");
+    font-weight: map-get($font-weights, "semi-bold");
+}
+h2 {
+    font-size: map-get($font-sizes, "h2");
+    font-weight: map-get($font-weights, "medium");
+}
+h3 {
+    font-size: map-get($font-sizes, "h3");
+    font-weight: map-get($font-weights, "medium");
+}
+h4 {
+    font-size: map-get($font-sizes, "h4");
+    font-weight: map-get($font-weights, "regular");
+}
+h5 {
+    font-size: map-get($font-sizes, "h5");
+    font-weight: map-get($font-weights, "medium");
+}
+h6 {
+    font-size: map-get($font-sizes, "h6");
+    font-weight: map-get($font-weights, "medium");
+}
+body {
+    font-size: map-get($font-sizes, "body");
+    font-weight: map-get($font-weights, "regular");
+}
+.caption {
+    font-size: map-get($font-sizes, "caption");
+    font-weight: map-get($font-weights, "regular");
+}
+.smaller-caption {
+    font-size: map-get($font-sizes, "smaller-caption");
+    font-weight: map-get($font-weights, "medium");
+}
+p {
+    margin: 0;
+}

@@ -1,0 +1,50 @@
+a.card {
+    text-decoration: none;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        width: auto;
+    }
+
+    img {
+        height: 13.75rem;
+        border-radius: 1.25rem;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            width: 300px;
+        }
+    }
+
+    h4 {
+        font-weight: map-get($font-weights, "medium");
+        height: 1.6875rem;
+    }
+
+    .caption {
+        height: 1.25rem;
+    }
+}
+
+a.card.hidden-project {
+    display: none;
+}
+
+//Date Cards
+.date-card {
+    display: flex;
+    padding: 0.1875rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3125rem;
+    background: $color-primary;
+}
+
+// Info Section For About Tab
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    align-self: stretch;
+    padding: 0.75rem 0rem;
+}

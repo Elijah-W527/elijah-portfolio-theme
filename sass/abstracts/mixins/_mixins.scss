@@ -1,0 +1,21 @@
+@mixin media-breakpoint-up($breakpoint) {
+    $min-width: map-get($breakpoints, $breakpoint);
+  
+    // Ensure that the breakpoint exists and is valid
+    @if $min-width != null {
+      @media (min-width: $min-width) {
+        @content;
+      }
+    } @else {
+      @warn "Breakpoint '#{$breakpoint}' is not defined in \$breakpoints.";
+    }
+  }
+  
+  $breakpoints: (
+    'xs': 0,      // Extra small devices (portrait phones, less than 576px)
+    'sm': 576px,  // Small devices (landscape phones, 576px and up)
+    'md': 768px,  // Medium devices (tablets, 768px and up)
+    'lg': 992px,  // Large devices (desktops, 992px and up)
+    'xl': 1400px,  // Extra large devices (large desktops, 1400px and up)
+    'xxl': 1920px  // Extra Extra large devices (large desktops, 1920px and up)
+  );

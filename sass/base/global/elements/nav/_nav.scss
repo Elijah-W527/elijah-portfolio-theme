@@ -1,0 +1,13 @@
+.site-header {
+    background-color: $neutral-n700;
+    .logo {
+        padding: 1rem 2.5rem;
+        img{
+            width: 3rem;
+            height: 3rem;
+            object-fit: contain;
+        }
+    }
+}
+
+
